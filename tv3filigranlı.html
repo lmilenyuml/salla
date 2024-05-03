@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Ekranı 6 TradingView Widget ile Bölme</title>
+<style>
+  body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun */
+    grid-template-rows: repeat(2, 1fr); /* 2 eşit satır */
+    width: 100vw; /* Viewport'un tam genişliği */
+    height: 100vh; /* Viewport'un tam yüksekliği */
+    box-sizing: border-box;
+    gap: 10px; /* Kutular arası boşluk */
+  }
+  .box {
+    position: relative; /* Pozisyon referansını ayarlar */
+    border: 2px solid #ccc;
+    overflow: hidden; /* Herhangi bir taşmayı önler */
+  }
+  .filigran {
+    position: absolute;
+    top: 50%; /* Yatay konumu ortalar */
+    left: 50%; /* Dikey konumu ortalar */
+    transform: translate(-50%, -50%); /* Tam ortada konumlandırır */
+    font-size: 65px;
+    color: rgba(255, 255, 255, 0.5); /* Yarı şeffaf beyaz renk */
+    pointer-events: none; /* Fare olaylarını devre dışı bırakır */
+    z-index: 10; /* Diğer ögelerin önünde gösterilir */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Kutu 1 -->
+  <div class="box">
+    <div class="filigran">BTC</div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "BINANCE:BTCUSDT.P",
+        "interval": "1",
+        "timezone": "Europe/Istanbul",
+        "theme": "dark",
+        "style": "1",
+        "locale": "tr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "hide_volume": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <!-- Kutu 2 -->
+  <div class="box">
+    <div class="filigran">SALLA</div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "BINANCE:BTCUSDT.P",
+        "interval": "1",
+        "timezone": "Europe/Istanbul",
+        "theme": "dark",
+        "style": "1",
+        "locale": "tr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "hide_volume": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <!-- Kutu 3 -->
+  <div class="box">
+    <div class="filigran">BTC</div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "BINANCE:BTCUSDT.P",
+        "interval": "1",
+        "timezone": "Europe/Istanbul",
+        "theme": "dark",
+        "style": "1",
+        "locale": "tr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "hide_volume": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <!-- Kutu 4 -->
+  <div class="box">
+    <div class="filigran">BTC</div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "BINANCE:BTCUSDT.P",
+        "interval": "1",
+        "timezone": "Europe/Istanbul",
+        "theme": "dark",
+        "style": "1",
+        "locale": "tr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "hide_volume": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <!-- Kutu 5 -->
+  <div class="box">
+    <div class="filigran">BTC</div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "BINANCE:BTCUSDT.P",
+        "interval": "1",
+        "timezone": "Europe/Istanbul",
+        "theme": "dark",
+        "style": "1",
+        "locale": "tr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "hide_volume": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <!-- Kutu 6 -->
+  <div class="box">
+    <div class="filigran">BTC</div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="height:100%;width:100%">
+      <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "BINANCE:BTCUSDT.P",
+        "interval": "1",
+        "timezone": "Europe/Istanbul",
+        "theme": "dark",
+        "style": "1",
+        "locale": "tr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "calendar": false,
+        "hide_volume": true,
+        "support_host": "https://www.tradingview.com"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+</div>
+</body>
+</html>
